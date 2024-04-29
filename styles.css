@@ -1,0 +1,199 @@
+:root {
+    --teal: #007d7b;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    background-color: black;
+}
+
+body {
+    background-color: white;
+    width: 75%;
+    margin: 0 auto;
+}
+
+header {
+    padding-top: 1px;
+}
+
+p {
+    font-size: 1.25em;
+    padding: 1px 15px;
+}
+
+figcaption, label, input, small {
+    font-size: 1em;
+}
+
+nav {
+    background-color: black;
+    padding: 10px;
+}
+
+nav a {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+h1 {
+    font-size: 3em;
+    color: var(--teal);
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    color: black;
+}
+
+.top {
+    position: relative;
+}
+
+.bottom {
+    position: relative;
+}
+
+.white {
+    color: white;
+    background-color: black;
+}
+
+.black {
+    color: black;
+}
+
+#contact {
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+}
+
+#contact p {
+    text-align: center;
+    color: white;
+}
+
+#contact h2 {
+    color: white;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+}
+
+form {
+    padding: 15px;
+    width: 70%;
+    margin: 18px auto;
+}
+
+label {
+    color: white;
+    text-align: left;
+    display: block;
+    padding: 10px;
+}
+
+::placeholder {
+    color: var(--teal);
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    background-color: var(--teal);
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+input[type="submit"]:hover {
+    background-color: white;
+    color: var(--teal);
+}
+
+[href="#top"] {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    background-color: black;
+    border-color: white;
+    border-width: 2px;
+    padding: 15px;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding-top: 5px;
+}
+
+@media screen and (min-width:485px) {
+    nav ul {
+        justify-content: center;
+        text-align: center;
+    }
+    figure {
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+    figcaption {
+        text-align: center;
+    }
+    h1, h2, h3 {
+        text-align: center;
+    }
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width:880px) {
+    nav ul {
+        justify-content: center;
+        text-align: center;
+    }
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    nav ul {
+        justify-content: right;
+        text-align: right;
+        padding-right: 50px;
+    }
+    h1 {
+        text-align: left;
+        padding-left: 25px;
+    }
+    #gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
